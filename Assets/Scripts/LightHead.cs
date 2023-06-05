@@ -8,15 +8,15 @@ public class LightHead : MonoBehaviour
     private Light currentLight;
     private float intensity;
 
-    float Intensity
+    public float Intensity
     {
         get
         {
-            return intensity;
+            return currentLight.intensity;
         }
         set
         {
-            intensity = value;
+            currentLight.intensity = value;
         }
     }
     float Fadekoef
@@ -38,7 +38,7 @@ public class LightHead : MonoBehaviour
     }
     private void Update()
     {
-        intensity = currentLight.intensity;
+
     }
 
     private void FixedUpdate()
